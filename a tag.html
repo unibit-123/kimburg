@@ -129,8 +129,156 @@ Input 값을 넣어주는 문법 <br>
         </button>
 </form>
 
+<br>
+<br>
 
+<h2>Form(3) - Label</h2>
+폼 양식에 이름을 붙이는 태그 <br>
+<label for="user-name"> 라벨 </label> <br>
+<input type="text" id="user-name"> <br>
 
+<br><br>
 
+<h2>Form (4) - Radio & CheckBox</h2>
+<h3>Radio</h3>
+name은 서로 연관되어있는걸 알려주기위해 같은 값을 적어줌 <br>
+value는 각기 다른 값을 적어야 함
+<form action="" method="get">
+<input type="radio" name="subscription" id="subscribed" value="subscribed">
+<label for="subscribed">구독</label>
+<input type="radio" name="subscription" id="unubscribed" value="unsubscribed">
+<label for="unsubscribed">미구독</label>
+<button type="submit">선택</button>
+</form>
+<br>
+<h3>CheckBox</h3>
+<form action="">
+    <input type="checkbox" name="skills" id="html" value="html">
+    <label for="html">html</label>
+    <input type="checkbox" name="skills" id="css" value="css">
+    <label for="css">css</label>
+    <input type="checkbox" name="skills" id="JavaScript" value="JavaScript">
+    <label for="JavaScript">JavaScript</label>
+    <button type="submit">선택</button>
+</form>
+
+<br><br>
+
+<h2>Form (5) Select & Option</h2>
+
+<form action="" method="GET">
+<label for="skill">스킬</label>
+<select multiple name="skill" id="skill">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">JavaScript</option>
+</select>
+<button type="submit">선택</button>
+</form>
+
+<br><br>
+
+<h2>Form (6) - Textarea</h2>
+
+<textarea name="" id="" cols="30" rows="10" placeholder="자기소개를 입력해주세요"></textarea>
+<br> cols와 rows는 css로 조절가능
+
+<h2>Form (7) - button</h2>
+
+<button type="button">
+    버튼
+</button>
+
+<form action="">
+    <input type="text" name="" id="">
+    <button type="submit">제출하기</button>
+    <button type="reset">다시쓰기</button>
+</form>
+
+<br><br>
+
+<h2>Table (1) - 기본구조</h2>
+<table border="50">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>이름</th>
+            <th>개발분야</th>
+            <th>etc</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>00001</td>
+            <td>PJC</td>
+            <td>frontend</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>00002</td>
+            <td>james</td>
+            <td>fullstack</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br>
+
+<h2>Table (2) - 심화</h2>
+    <table>
+    <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">월</th>
+                <th scope="col">화</th>
+                <th scope="col">수</th>
+                <th scope="col">목</th>
+                <th scope="col">금</th>
+            </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th  scope="low">1교시</th>
+            <td rowspan="2">HTML &amp; CSS</td>
+            <td>모각코</td>
+            <td rowspan="2">HTML &amp; CSS</td>
+            <td>모각코</td>
+            <td rowspan="2">HTML &amp; CSS</td>
+        </tr>
+        <tr>
+            <th scope="low">2교시</th>
+            <!-- <td>HTML &amp; CSS</td> -->
+            <td rowspan="2">JavaScript 스킬업</td>
+            <!-- <td>HTML &amp; CSS</td> -->
+            <td rowspan="2">JavaScript 스킬업</td>
+            <!-- <td>HTML &amp; CSS</td> -->
+        </tr>
+        <tr>
+            <th scope="low">3교시</th>
+            <td>JavaScript 시작반</td>
+            <td>JavaScript 시작반</td>
+            <td>JavaScript 시작반</td>
+        </tr>
+    <tr>
+        <th colspan="6" scope="low">점심시간</th>
+    </tr>
+    <tr>
+        <th scope="low">4교시</th>
+        <td>SASS 기초반</td>
+        <td rowspan="2">HTML &amp; CSS 포트폴리오반</td>
+        <td rowspan="2">Open Seminar</td>
+        <td rowspan="2">HTML &amp; CSS 포트폴리오반</td>
+        <td>SASS 기초반</td>
+    </tr>
+    <tr>
+        <th scope="low">5교시</th>
+        <td>모각코</td>
+        <td>모각코</td>
+    </tr>
+    </tbody>
+    </table>
 </body>
 </html>
