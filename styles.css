@@ -86,6 +86,10 @@ body {
   margin: 0 auto;
 } */
 
+#spoqa {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
 table {
   border: 1px solid #000;
   border-collapse: collapse;
